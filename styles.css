@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+.login{
+  display: block;
+  background-color: #d1d0f3;;
+  height: 20;
+}
+.boton{
+  display: flex;
+
+  width: 50;
+  height: 50;
+}

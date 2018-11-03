@@ -3,8 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>TicoRides</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <header>
+      <div class="login">
+        <button class="boton"type="button" name="login">Login</button>
+      </div>
+    </header>
 
+    <div class="contenedor">
+      <p>Search for a ride</p>
+      <div class="contenedor-borde">
+        <form class="" action="index.html" method="post">
+          <label for="from">From</label>
+          <input type="text" name="txt-from" placeholder="Input text">
+          <label for="to">To</label>
+          <input type="text" name="txt-to" placeholder="Input text">
+          <button type="button" name="btn-ride">Find my Ride!</button>
+        </form>
+      </div>
+      <div class="contenedor">
+        <p>Result for Rides that matches your criteria:</p>
+        <table class="tabla-rides">
+        <tr>
+          <th>User</th>
+          <th>Start</th>
+          <th>End</th>
+          <th>&nbsp</th>
+        </tr>
+        <tr>
+          <td>barroyo</td>
+          <td>Barrio Los Anegeles</td>
+          <td>Cuidad Quesada</td>
+          <td>View</td>
+        </tr>
+        <tr>
+          <td>barroyo</td>
+          <td>Cuidad Quesada</td>
+          <td>Los Angeles</td>
+          <td>View</td>
+        </tr>
+        <tr>
+          <td>yluna</td>
+          <td>Cuidad Quesada</td>
+          <td>San Pedro</td>
+          <td>View</td>
+        </tr>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
