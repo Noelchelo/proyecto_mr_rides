@@ -9,10 +9,14 @@
   display: block;
   background-color: #d1d0f3;;
   height: 20;
-}
+}s
 .boton{
   display: flex;
 
   width: 50;
   height: 50;
+}
+
+textarea{
+  resize: none;
 }
