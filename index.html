@@ -4,28 +4,26 @@
     <meta charset="utf-8">
     <title>TicoRides</title>
     <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   </head>
   <body>
     <header>
       <div class="login">
-        <button class="boton"type="button" name="login">Login</button>
+        <button class="boton1"type="button" name="login"onclick="location.href='login.html'">Login</button>
+        <img class="icon" src="icon1.png" alt="">
       </div>
     </header>
-
     <div class="contenedor">
-      <p>Search for a ride</p>
-      <div class="contenedor-borde">
-        <form class="" action="index.html" method="post">
+        <p>Search for a ride</p>
+      <div class="contenedor-form">
           <label for="from">From</label>
           <input type="text" name="txt-from" placeholder="Input text">
           <label for="to">To</label>
           <input type="text" name="txt-to" placeholder="Input text">
-          <button type="button" name="btn-ride">Find my Ride!</button>
-        </form>
+          <button class="boton2" type="button" name="btn-ride">Find my Ride!</button>
       </div>
-      <div class="contenedor">
-        <p>Result for Rides that matches your criteria:</p>
         <table class="tabla-rides">
+        <p>Result for Rides that matches your criteria:</p> <br/>
         <tr>
           <th>User</th>
           <th>Start</th>
@@ -51,7 +49,6 @@
           <td>View</td>
         </tr>
         </table>
-      </div>
     </div>
   </body>
 </html>

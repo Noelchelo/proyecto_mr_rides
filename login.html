@@ -3,17 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   </head>
   <body>
-    <div class="contenedor-login">
-      <form class="" action="index.html" method="post">
-        <label for="username">Username</label>
-        <input type="text" name="username" placeholder="Input text">
+    <header>
+      <div class="login">
+        <img class="icon" src="icon1.png" alt="">
+      </div>
+    </header>
+    <div class="contenedor">
+      <div class="contenedor-login">
+        <div class="label-login">
+          <label for="username">Username</label>
+          <input class="input-login" type="text" name="username" placeholder="Input text">
+        </div>
+      <div class="label-login">
         <label for="password">Password</label>
-        <input type="text" name="password" placeholder="Input text">
-        <p>Not a User? <a href="#">Register here</a> </p>
-        <button type="button" name="log">Login</button>
-      </form>
+        <input class="input-login" type="text" name="password" placeholder="Input text">
+      </div>
+        <p>Not a User? <a href="register.html">Register here</a> </p>
+        <button class="boton3" type="button" name="log">Login</button>
+      </div>
     </div>
   </body>
 </html>
