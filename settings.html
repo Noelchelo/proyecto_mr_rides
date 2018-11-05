@@ -3,36 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   </head>
   <body>
     <header>
-      <div class="">
-        <img src="" alt="logo">
-      </div>
+      <div class="login">
+        <img class="icon-dash" src="icon1.png" alt="logo">
+        <input class="perfil" type="image" src="profile.png" alt="perfil">
+        <label class="label-login">Welcome <span>Barroyo</span></label>
       <nav>
         <ul>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Rides</a></li>
-          <li><a href="#">Settings</a></li>
+          <li> <a href="dashboard.html">Home</a></li>
+          <li> <a href="rides.html">Rides</a></li>
+          <li> <a href="settings.html">Settings</a></li>
         </ul>
+        <div class="dash-link">
+          <h2>Settings</h2> <br/>
+          <a href="dashboard.html">Dashboard &gt; Settings </a>
+        </div>
       </nav>
-      <div class="">
-        <h2>Settings</h2>
-        <p>Welcome barroyo <img src="" alt="perfil"></p>
       </div>
     </header>
-    <div class="">
-      <form class="" action="index.html" method="post">
-        <label for="fullname">Full Name</label>
-        <input type="text" name="fullname" value="Bladimir Arroyo">
+    <div class="contenedor">
+      <form class="forms" action="index.html" method="post">
+        <div class="label-login">
+          <label for="fullname">Full Name</label>
+          <input class="input-login" type="text" name="fullname" value="Bladimir Arroyo">
+        </div>
+      <div class="label-login">
         <label for="speed">Seed Average</label>
-        <input type="text" name="speed" value="60 km/h">+
-        <label for="aboutme">About Me</label>
-        <input type="texarea" name="" value="">
-        <textarea name="aboutme"  rows="4" cols="50">Something about
-        goes here</textarea>
-        <a href="#">Cancel</a>
-        <button type="button" name="save">Save</button>
+        <input class="input-login" type="text" name="speed" value="60 km/h">
+      </div>
+        <div class="label-login">
+          <label for="aboutme">About Me</label>
+          <textarea class="input-login" name="aboutme"  rows="4" cols="50">Something about me goes here</textarea>
+        </div>
+        <div class="space-button">
+          <a href="dashboard.html">Cancel</a>
+          <button class="boton4" type="button" name="save">Save</button>
+        </div>
       </form>
     </div>
   </body>

@@ -8,44 +8,61 @@
   </head>
   <body>
     <header>
-      <div class="">
-        <img src="" alt="">
-      </div>
+      <div class="login">
+        <img class="icon-dash" src="icon1.png" alt="logo">
+        <input class="perfil" type="image" src="profile.png" alt="perfil">
+        <label class="label-login">Welcome <span>Barroyo</span></label>
       <nav>
         <ul>
-          <li> <a href="#">Dashboard</a> </li>
-          <li> <a href="#">Rides</a> </li>
-          <li> <a href="#">Settings</a> </li>
+          <li> <a href="dashboard.html">Home</a></li>
+          <li> <a href="rides.html">Rides</a></li>
+          <li> <a href="settings.html">Settings</a></li>
         </ul>
+        <div class="dash-link">
+          <h2>Rides</h2> <br/>
+          <a href="dashboard.html">Dashboard &gt; Rides &gt; Edit</a>
+        </div>
       </nav>
-      <h2>Rides</h2>
-      <div class="">
-        <p> Welcome barrayo <img src="" alt=""> </p>
       </div>
     </header>
-    <div class="">
-      <form class="" action="index.html" method="post">
-        <label for="ridename">Ride Name</label>
-        <input type="text" name="ridename" value="Brete">
-        <label for="startfrom">Start From</label>
-        <input type="text" name="startfrom" value="Barrio Los Angeles">
-        <label for="end">End</label>
-        <input type="text" name="end" value="Mercado Municipal, Cuidad Quesada">
-        <label for="description">Description</label>
-        <textarea name="description" rows="4" cols="60">This is my everyday ride, from Barrio los Angeles to my job's offices
-in sencond Floor of cooperservidores Building
-        </textarea>
+    <div class="contenedor">
+      <form class="forms" action="index.html" method="post">
+        <div class="label-login">
+          <label for="ridename">Ride Name</label>
+          <input class="input-login" type="text" name="ridename" value="Brete">
+        </div>
+        <div class="label-login">
+          <label for="startfrom">Start From</label>
+          <input class="input-login" type="text" name="startfrom" value="Barrio Los Angeles">
+        </div>
+        <div class="label-login">
+          <label for="end">End</label>
+          <input class="input-login" type="text" name="end" value="Mercado Municipal, Cuidad Quesada">
+        </div>
+        <div class="label-login">
+          <label for="description">Description</label>
+          <textarea class="input-login" name="description" rows="4" cols="60">This is my everyday ride, from Barrio los Angeles
+to my job's offices in sencond Floor of cooperservidores Building
+          </textarea>
+        </div>
       </form>
-      <div class="">
-        <form class="" action="index.html" method="post">
-          <label for="departure">Departure</label>
-          <input type="text" name="departure" value="6:45 AM">
-          <label for="estimated_arrival">Estimated Arrival</label>
-          <input type="text" name="estimated_arrival" value="7:05 AM">
+      <div class="espacio">
+        <p class="palabra-especial">When</p>
+      </div>
+      <div class="contenedor-ride-left">
+        <form class="forms" action="index.html" method="post">
+          <div class="label-login">
+            <label for="departure">Departure</label>
+            <input class="input-login" type="text" name="departure" value="6:45 AM">
+          </div>
+          <div class="label-login">
+            <label for="estimated_arrival">Estimated Arrival</label>
+            <input class="input-login" type="text" name="estimated_arrival" value="7:05 AM">
+          </div>
         </form>
       </div>
-      <div class="">
-        <form class="" action="index.html" method="post">
+      <div class="contenedor-ride-right">
+        <form class="form-box" action="index.html" method="post">
           <label for="select_days">Select Days</label>
           <label> <input type="checkbox" checked="checked" name="monday" value="monday">Monday</label>
           <label> <input type="checkbox" checked="checked" name="tuesday" value="tuesday">Tuesday</label>
@@ -58,8 +75,10 @@ in sencond Floor of cooperservidores Building
           <label> <input type="checkbox" name="sunday" value="sunday">Sunday</label>
         </form>
       </div>
-      <a href="#">Cancel</a>
-      <button type="button" name="button">Save</button>
+      <div class="space-button-rides">
+        <a href="dashboard.html">Cancel</a>
+        <button class="boton4" type="button" name="save">Save</button>
+      </div>
     </div>
   </body>
 </html>

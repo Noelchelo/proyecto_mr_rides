@@ -3,54 +3,59 @@
   <head>
     <meta charset="utf-8">
     <title>dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   </head>
   <body>
     <header>
-      <div class="">
-        <img src="" alt="">
-      </div>
+      <div class="login">
+        <img class="icon-dash" src="icon1.png" alt="logo">
+        <input class="perfil" type="image" src="profile.png" alt="perfil">
+        <label class="label-login">Welcome <span>Barroyo</span></label>
       <nav>
         <ul>
-          <li> <a href="#"></a>Dashboard</li>
-          <li> <a href="#"></a>Rides</li>
-          <li> <a href="#"></a>Settings</li>
+          <li> <a href="dashboard.html">Home</a></li>
+          <li> <a href="rides.html">Rides</a></li>
+          <li> <a href="settings.html">Settings</a></li>
         </ul>
+        <div class="dash-link">
+          <h2>Rides</h2> <br/>
+          <a href="dashboard.html">Dashboard &gt;</a>
+        </div>
       </nav>
-      <div class="">
-        <h2>Dashboard</h2>
-        <p>Welcome barroyo <img class="perfil" src="" alt="perfil"> </p>
-        <a href="#">Dashboard &gt; </a>
       </div>
     </header>
-    <p>My Rides</p>
     <div class="contenedor">
-      <p>Your current list of Rides</p>
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Start</th>
-          <th>End</th>
-          <th>Actions</th>
-        </tr>
-        <tr>
-          <td>Brete</td>
-          <td>Barrio los Angeles</td>
-          <td>Cuidad Quesada</td>
-          <td>Edit-Delete</td>
-        </tr>
-        <tr>
-          <td>Casa</td>
-          <td>Cuidad Quesada</td>
-          <td>Los Angeles</td>
-          <td>Edit-Delete</td>
-        </tr>
-        <tr>
-          <td>Of cina Chepe</td>
-          <td>Cuidad Quesada</td>
-          <td>San Pedro</td>
-          <td>Edit-Delete</td>
-        </tr>
-      </table>
+      <p>My Rides</p>
+      <div class="contenedor-dash">
+        <p>Your current list of Rides</p>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Actions</th>
+          </tr>
+          <tr>
+            <td>Brete</td>
+            <td>Barrio los Angeles</td>
+            <td>Cuidad Quesada</td>
+            <td>Edit-Delete</td>
+          </tr>
+          <tr>
+            <td>Casa</td>
+            <td>Cuidad Quesada</td>
+            <td>Los Angeles</td>
+            <td>Edit-Delete</td>
+          </tr>
+          <tr>
+            <td>Oficina Chepe</td>
+            <td>Cuidad Quesada</td>
+            <td>San Pedro</td>
+            <td>Edit-Delete</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </body>
 </html>
