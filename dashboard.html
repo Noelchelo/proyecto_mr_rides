@@ -9,17 +9,18 @@
   <body>
     <header>
       <div class="login">
-        <img class="icon-dash" src="icon1.png" alt="logo">
-        <input class="perfil" type="image" src="profile.png" alt="perfil">
+        <img class="icon-dash" src="imagenes/icon1.png" alt="logo">
+        <input class="perfil" type="image" src="imagenes/profile.png" alt="perfil">
         <label class="label-login">Welcome <span>Barroyo</span></label>
       <nav>
         <ul>
           <li> <a href="dashboard.html">Home</a></li>
-          <li> <a href="rides.html">Rides</a></li>
+          <li> <a href="rides_add.html">Rides</a></li>
           <li> <a href="settings.html">Settings</a></li>
+          <li> <a href="index.html">Sign out</a></li>
         </ul>
         <div class="dash-link">
-          <h2>Rides</h2> <br/>
+          <h2>Dashboard</h2> <br/>
           <a href="dashboard.html">Dashboard &gt;</a>
         </div>
       </nav>
@@ -28,6 +29,7 @@
     <div class="contenedor">
       <p>My Rides</p>
       <div class="contenedor-dash">
+        <input class="add" type="image" src="imagenes/add.png" alt="add" onclick="location.href='rides_add.html'">
         <p>Your current list of Rides</p>
         <table>
           <tr>
@@ -40,19 +42,19 @@
             <td>Brete</td>
             <td>Barrio los Angeles</td>
             <td>Cuidad Quesada</td>
-            <td>Edit-Delete</td>
+            <td> <a href="rides.html">Edit</a>-Delete</td>
           </tr>
           <tr>
             <td>Casa</td>
             <td>Cuidad Quesada</td>
             <td>Los Angeles</td>
-            <td>Edit-Delete</td>
+            <td><a href="rides.html">Edit</a>-Delete</td>
           </tr>
           <tr>
             <td>Oficina Chepe</td>
             <td>Cuidad Quesada</td>
             <td>San Pedro</td>
-            <td>Edit-Delete</td>
+            <td><a href="rides.html">Edit</a>-Delete</td>
           </tr>
         </table>
       </div>

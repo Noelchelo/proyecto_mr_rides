@@ -4,19 +4,20 @@
     <meta charset="utf-8">
     <title>Rides</title>
     <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   </head>
   <body>
     <header>
       <div class="login">
-        <img class="icon-dash" src="icon1.png" alt="logo">
-        <input class="perfil" type="image" src="profile.png" alt="perfil">
+        <img class="icon-dash" src="imagenes/icon1.png" alt="logo">
+        <input class="perfil" type="image" src="imagenes/profile.png" alt="perfil">
         <label class="label-login">Welcome <span>Barroyo</span></label>
       <nav>
         <ul>
           <li> <a href="dashboard.html">Home</a></li>
-          <li> <a href="rides.html">Rides</a></li>
+          <li> <a href="rides_add.html">Rides</a></li>
           <li> <a href="settings.html">Settings</a></li>
+          <li> <a href="index.html">Sign out</a></li>
         </ul>
         <div class="dash-link">
           <h2>Rides</h2> <br/>
@@ -76,8 +77,8 @@ to my job's offices in sencond Floor of cooperservidores Building
         </form>
       </div>
       <div class="space-button-rides">
-        <a href="dashboard.html">Cancel</a>
-        <button class="boton4" type="button" name="save">Save</button>
+        <button class="boton-left" type="button" name="cancel" onclick="location.href='dashboard.html'" >Cancel</button>
+        <button class="boton-right" type="button" name="save">Save</button>
       </div>
     </div>
   </body>

@@ -9,14 +9,15 @@
   <body>
     <header>
       <div class="login">
-        <img class="icon-dash" src="icon1.png" alt="logo">
-        <input class="perfil" type="image" src="profile.png" alt="perfil">
+        <img class="icon-dash" src="imagenes/icon1.png" alt="logo">
+        <input class="perfil" type="image" src="imagenes/profile.png" alt="perfil">
         <label class="label-login">Welcome <span>Barroyo</span></label>
       <nav>
         <ul>
           <li> <a href="dashboard.html">Home</a></li>
-          <li> <a href="rides.html">Rides</a></li>
+          <li> <a href="rides_add.html">Rides</a></li>
           <li> <a href="settings.html">Settings</a></li>
+          <li> <a href="index.html">Sign out</a></li>
         </ul>
         <div class="dash-link">
           <h2>Settings</h2> <br/>
@@ -32,16 +33,16 @@
           <input class="input-login" type="text" name="fullname" value="Bladimir Arroyo">
         </div>
       <div class="label-login">
-        <label for="speed">Seed Average</label>
+        <label for="speed">Speed Average</label>
         <input class="input-login" type="text" name="speed" value="60 km/h">
       </div>
         <div class="label-login">
           <label for="aboutme">About Me</label>
           <textarea class="input-login" name="aboutme"  rows="4" cols="50">Something about me goes here</textarea>
         </div>
-        <div class="space-button">
-          <a href="dashboard.html">Cancel</a>
-          <button class="boton4" type="button" name="save">Save</button>
+        <div class="space-button-rides">
+          <button class="boton-left" type="button" name="Cancel" onclick="location.href='dashboard.html'" >Cancel</button>
+          <button class="boton-right" type="button" name="save">Save</button>
         </div>
       </form>
     </div>

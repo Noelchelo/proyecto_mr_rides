@@ -3,47 +3,67 @@
   <head>
     <meta charset="utf-8">
     <title>Rides</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   </head>
   <body>
     <header>
-      <div class="">
-        <img src="" alt="">
-      </div>
+      <div class="login">
+        <img class="icon-dash" src="imagenes/icon1.png" alt="logo">
+        <input class="perfil" type="image" src="imagenes/profile.png" alt="perfil">
+        <label class="label-login">Welcome <span>Barroyo</span></label>
       <nav>
         <ul>
-          <li> <a href="#">Dashboard</a> </li>
-          <li> <a href="#">Rides</a> </li>
-          <li> <a href="#">Settings</a> </li>
+          <li> <a href="dashboard.html">Home</a></li>
+          <li> <a href="rides_add.html">Rides</a></li>
+          <li> <a href="settings.html">Settings</a></li>
+          <li> <a href="index.html">Sign out</a></li>
         </ul>
+        <div class="dash-link">
+          <h2>Rides</h2> <br/>
+          <a href="dashboard.html">Dashboard &gt; Rides &gt; Add</a>
+        </div>
       </nav>
-      <h2>Rides</h2>
-      <div class="">
-        <p> Welcome barrayo <img src="" alt=""> </p>
       </div>
     </header>
-    <div class="">
-      <form class="" action="index.html" method="post">
-        <label for="ridename">Ride Name</label>
-        <input type="text" name="ridename" placeholder="Input text">
-        <label for="startfrom">Start From</label>
-        <input type="text" name="startfrom" placeholder="Location">
-        <label for="end">End</label>
-        <input type="text" name="end" placeholder="Input text">
-        <label for="description">Description</label>
-        <textarea name="description" rows="4" cols="60">Add here <br/>
-          the description of the ride
-        </textarea>
+    <div class="contenedor">
+      <form class="forms" action="index.html" method="post">
+        <div class="label-login">
+          <label for="ridename">Ride Name</label>
+          <input class="input-login" type="text" name="ridename" value="" placeholder="Input text">
+        </div>
+        <div class="label-login">
+          <label for="startfrom">Start From</label>
+          <input class="input-login" type="text" name="startfrom" value="" placeholder="Location">
+        </div>
+        <div class="label-login">
+          <label for="end">End</label>
+          <input class="input-login" type="text" name="end" value="" placeholder="Input text">
+        </div>
+        <div class="label-login">
+          <label for="description">Description</label>
+          <textarea class="input-login" name="description" rows="4" cols="60">Add here
+the description of the ride
+          </textarea>
+        </div>
       </form>
-      <div class="">
-        <form class="" action="index.html" method="post">
-          <label for="departure">Departure</label>
-          <input type="text" name="departure" value="7:00 AM">
-          <label for="estimated"arrival>Estimated Arrival</label>
-          <input type="text" name="estimated_arrival" value="8:30 AM">
+      <div class="espacio">
+        <p class="palabra-especial">When</p>
+      </div>
+      <div class="contenedor-ride-left">
+        <form class="forms" action="index.html" method="post">
+          <div class="label-login">
+            <label for="departure">Departure</label>
+            <input class="input-login" type="text" name="departure" value="7:00 AM">
+          </div>
+          <div class="label-login">
+            <label for="estimated_arrival">Estimated Arrival</label>
+            <input class="input-login" type="text" name="estimated_arrival" value="8:30 AM">
+          </div>
         </form>
       </div>
-      <div class="">
-        <form class="" action="index.html" method="post">
+      <div class="contenedor-ride-right">
+        <form class="form-box" action="index.html" method="post">
           <label for="select_days">Select Days</label>
           <label> <input type="checkbox" name="monday" value="monday">Monday</label>
           <label> <input type="checkbox" name="tuesday" value="tuesday">Tuesday</label>
@@ -56,8 +76,10 @@
           <label> <input type="checkbox" name="sunday" value="sunday">Sunday</label>
         </form>
       </div>
-      <a href="#">Cancel</a>
-      <button type="button" name="button">Save</button>
+      <div class="space-button-rides">
+        <button class="boton-left" type="button" name="cancel" onclick="location.href='dashboard.html'" >Cancel</button>
+        <button class="boton-right" type="button" name="save">Save</button>
+      </div>
     </div>
   </body>
 </html>
